@@ -7,4 +7,19 @@ public class Main {
         String str = cb.meth(); //calling method of class A with class B object
         System.out.println(str);
     }
+
+    public static class ClassA {
+
+        String meth(){
+            return "Invoking method from class A";
+        }
+    }
+
+    public static class ClassB extends ClassA {
+
+        @Override
+        String meth() {
+            return "Method is overridden in Extended class B";
+        }
+    }
 }
