@@ -8,19 +8,18 @@ public class Main {
         System.out.println(str);
     }
 
-}
+    public static class ClassA {
 
-    class ClassA {
-
-    String meth(){
-        return "Invoking method from class A";
+       public  String meth(){
+            return "Invoking method from class A";
+        }
     }
-}
 
-  class ClassB extends ClassA {
+    public static class ClassB extends ClassA {
 
-    @Override
-    String meth() {
-        return "Method is overridden in Extended class B";
+        @Override
+        public String meth() {
+            return "Method is overridden in Extended class B";
+        }
     }
 }
