@@ -2,20 +2,20 @@ package com.driver;
 
 public class Main {
     public static void main(String[] args) {
-        ClassB cb = new ClassB();
+        B cb = new B();
 
-        String str = cb.meth(); //calling method of class A with class B object
+        String str = cb.meth();
         System.out.println(str);
     }
 
-    public static class ClassA {
+    public static class A {
 
-       public  String meth(){
+       public String meth(){
             return "Invoking method from class A";
         }
     }
 
-    public static class ClassB extends ClassA {
+    public static class B extends A {
 
         @Override
         public String meth() {
